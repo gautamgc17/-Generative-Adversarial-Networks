@@ -1,6 +1,6 @@
 ## Cartoon Image Generator with Deep Convolutional Generative Adversarial Networks
 
-#### DCGAN's training process step by step.
+### DCGAN's training process step by step.
 1. We take some noise from random (Gaussian) distribution, then we feed it to the Generator G (which is a Convolutional Neural Network) to produce the fake image instances x (label y=0) = (x,y) input-label pair.
 
 2. We take this fake pair and the real pair x (label y=1) and feed it to the Discriminator D alternatively.
@@ -12,6 +12,9 @@
 5. The two losses go back to their respective networks to learn from the loss (adjusting the parameters wrt the loss).
 
 6. Apply any optimization algorithm (Grad descent, ADAM, RMS prop, etc..) Repeat this process for certain no of epochs or as long as you wish. Each network has conflicting goals so these two networks pit against each other during the training. The generator G gets stronger and stronger at generating the real type of results and the discriminator D also gets stronger and stronger at identifying which one is real, which one is fake.
+
+### Arcitecture
+![images](images/dcgan.png)
 
 
 
