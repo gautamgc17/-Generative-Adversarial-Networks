@@ -16,5 +16,8 @@
 ### Arcitecture
 ![images](images/dcgan.png)
 
+### Reference
+https://gsurma.medium.com/image-generator-drawing-cartoons-with-generative-adversarial-networks-45e814ca9b6b
+
 
 
